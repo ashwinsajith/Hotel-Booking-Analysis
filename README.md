@@ -76,3 +76,9 @@ The project includes:
 * Distribution channels heavily influence booking patterns
 
 * Data-driven segmentation can inform pricing and marketing strategy
+
+### Notes 
+
+* This project was originally developed as academic coursework and has been 
+refined for portfolio presentation. 
+* The analysis is exploratory, and results indicate correlation rather than causation.
