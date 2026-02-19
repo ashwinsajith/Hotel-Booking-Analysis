@@ -1,6 +1,6 @@
 # Hotel-Booking-Analysis
 
-This project applies data science techniques to analyse booking behaviour in the hospitality industry using a real-world dataset of hotel reservations. The analysis compares City Hotels and Resort Hotels to uncover trends in cancellations, revenue generation, customer retention, and booking channels.
+This project applies data science techniques to analyse booking behaviour in the hospitality industry using a real-world dataset of hotel reservations. The analysis compares City Hotels and Resort Hotels to reveal trends in cancellations, revenue generation, customer retention, and booking channels.
 
 
 
