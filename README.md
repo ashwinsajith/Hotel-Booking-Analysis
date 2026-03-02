@@ -1,7 +1,14 @@
-# Hotel-Booking-Analysis
+# Hotel Cancellation Predictive Analysis
 
-This project applies data science techniques to analyse booking behaviour in the hospitality industry using a real-world dataset of hotel reservations. The analysis compares City Hotels and Resort Hotels to reveal trends in cancellations, revenue generation, customer retention, and booking channels.
+This project applies data science and machine learning techniques to analyse and predict cancellation behaviour in the hospitality industry using a real-world dataset of hotel reservations. The analysis compares City Hotels and Resort Hotels to reveal trends in cancellations, revenue generation, customer retention, and booking channels. It uses a Random Forest Classifier to tackle business risks with overbooking.
 
+### Project Highlights
+
+* Predictive Power: Developed a model achieving 86.24% Accuracy and an 80.1% F1-Score.
+
+* Business View: Optimised for 86.5% Precision over Recall (74.6%) to specifically minimise "False Positives", reducing the risk of overbooking scenarios.
+
+* Scale: Processed and analysed a comprehensive dataset of over 115,000 hotel reservations.
 
 
 ### Dataset
@@ -20,65 +27,50 @@ The dataset (hotel_bookings.csv) contains detailed booking records, including:
 
 * Distribution channel information
 
-A full feature description is provided in Data Description.pdf.
+A full feature description is provided in DataDescription.pdf.
 
 ### Methods & Tools
 
-* Pandas – data cleaning and aggregation
+* Pandas - Data cleaning and Aggregation
 
-* NumPy – numerical operations
+* NumPy - Numerical operations
 
-* Matplotlib – exploratory data visualisation
+* Matplotlib - Exploratory data visualisation
+* Scikit-learn - Machine learning implementation (Random Forest)
 
-* Jupyter Notebook – exploratory data analysis 
+* Jupyter Notebook - Exploratory Data Analysis 
+
 
 ### Analytical Approach
-1. Exploratory Data Analysis (EDA)
+1. Exploratory Data Analysis (EDA):
 
-* Cleaned and aggregated booking data by hotel type and time period
+    * Cleaned and aggregated booking data by hotel type (City vs. Resort).
 
-* Identified missing values and structured categorical variables
+    * Identified seasonal patterns suggesting demand-driven volatility in urban bookings.
 
-* Grouped monthly booking behaviour for temporal analysis
+    * Analysed revenue through Average Daily Rate (ADR) to estimate total revenue contributions.
 
-2. Cancellation Behaviour Analysis
+2. Predictive Modelling (Machine Learning):
 
-* Analysed monthly cancellation trends for City and Resort Hotels
+    * Model Selection: Implemented a Random Forest Classifier to handle complex, non-linear relationships in booking data.
 
-* City Hotels show consistently higher cancellation volumes
+    * Feature Engineering: Utilised one-hot encoding and structured categorical variables to prepare the 115k+ record dataset for training.
 
-* Seasonal patterns suggest demand-driven volatility in urban bookings
-
-3. Revenue Analysis (ADR)
-
-* Aggregated Average Daily Rate (ADR) to estimate revenue contribution
-
-* City Hotels generate substantially higher total ADR than Resort Hotels
-
-* Indicates stronger pricing power and occupancy in city-based hotels
+    * Optimisation Strategy: Tuned the model to prioritise Precision (86.5%), ensuring that predictions of "No Cancellation" were highly reliable to protect the guest experience and hotel reputation.
 
 
 ### Visual Outputs
 
 The project includes:
 
-* Time series line plots for cancellations and repeated guests
+* Performance Metrics: Confusion matrices and classification reports documenting the 80.1% F1-Score.
 
-* Bar chart comparing total ADR by hotel type
+* Trend Analysis: Time series line plots for cancellations and bar charts comparing total ADR by hotel type.
 
-* Pie charts showing distribution channel breakdowns
+* Retention Insights: Identified that while City Hotels face higher demand volatility, Resort Hotels benefit from higher customer retention rates.
 
-### Final Conclusion/Insights
-* Urban hotels face higher demand volatility but stronger revenue
 
-* Resort hotels benefit from higher customer retention
+### Final Conclusion
 
-* Distribution channels heavily influence booking patterns
+The integration of predictive modeling allows for data-driven insights that can directly inform pricing and marketing strategies. Hotels can better manage occupancy levels and revenue generation while significantly reducing the operational costs of overbooking. The ability to maintain an 80.1% F1-Score across a massive 115,000+ record dataset proves the model is robust enough for real-world deployment. Ultimately, this project demonstrates how Scikit-learn and Random Forest architectures can be tuned not just for the highest number, but for the safest business outcome.
 
-* Data-driven segmentation can inform pricing and marketing strategy
-
-### Notes 
-
-* This project was originally developed as academic coursework and has been 
-refined for portfolio presentation. 
-* The analysis is exploratory, and results indicate correlation rather than causation.
